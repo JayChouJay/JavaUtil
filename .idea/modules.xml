@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DataStruct/DataStruct.iml" filepath="$PROJECT_DIR$/DataStruct/DataStruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPattern/DesignPattern.iml" filepath="$PROJECT_DIR$/DesignPattern/DesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JDKTool/JDKTool.iml" filepath="$PROJECT_DIR$/JDKTool/JDKTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaUtil.iml" filepath="$PROJECT_DIR$/JavaUtil.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OutTool/OutTool.iml" filepath="$PROJECT_DIR$/OutTool/OutTool.iml" />
+    </modules>
+  </component>
+</project>
