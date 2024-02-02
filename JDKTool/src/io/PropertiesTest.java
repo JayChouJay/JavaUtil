@@ -40,8 +40,6 @@ public class PropertiesTest {
             String key = (String) en.nextElement();
             System.out.println(key);
         }
-
-
     }
 
 }
