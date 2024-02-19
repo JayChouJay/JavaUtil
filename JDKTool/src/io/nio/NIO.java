@@ -33,10 +33,12 @@ public class NIO {
         //8
         //切换模式：读模式
         byteBuffer.flip();
-        byte[] buff = new byte[byteBuffer.limit()];
+        int limit = byteBuffer.limit();
+        byte[] buff = new byte[limit];
         //读取剩余长度
         byteBuffer.mark();
         byteBuffer.get(buff);
+        System.out.println(new String(buff));
 
         System.out.println("limit =" + byteBuffer.limit());
         System.out.println("position =" + byteBuffer.position());

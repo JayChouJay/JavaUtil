@@ -2,7 +2,7 @@ package algorithm.a1array.sort;
 
 import java.util.Arrays;
 
-public class C2AdvancedSort {
+public class MergeSort {
     //归并排序入口
     public int[] mergeSort(int[] arr) {
         if (arr == null) return null;
@@ -25,4 +25,19 @@ public class C2AdvancedSort {
         //TODO:归并排序没学会
         return null;
     }
+
+    public static boolean compare(int val1, int val2) {
+        //如果 前面的数i>后面的数j
+        if (val1 > val2) {
+            return true;
+        }
+        return false;
+    }
+
+    public static void change(int[] arr, int i, int j) {
+        int temp = arr[j];
+        arr[j] = arr[i];
+        arr[i] = temp;
+    }
+
 }

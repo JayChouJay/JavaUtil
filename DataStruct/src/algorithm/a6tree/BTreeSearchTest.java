@@ -14,8 +14,6 @@ public class BTreeSearchTest {
     @Test
     public void preOrder() {
         BTreeSearch.preOrder(node);
-        System.out.println();
-        BTreeSearch2.preOrder(node);
     }
 
     /**
@@ -24,8 +22,6 @@ public class BTreeSearchTest {
     @Test
     public void inOrder() {
         BTreeSearch.inOrder(node);
-        System.out.println();
-        BTreeSearch2.inOrder(node);
     }
 
     /**
@@ -34,14 +30,5 @@ public class BTreeSearchTest {
     @Test
     public void lastOrder() {
         BTreeSearch.postOrder(node);
-        System.out.println();
-        BTreeSearch2.postOrder(node);
-    }
-    /**
-     * 广度遍历
-     */
-    @Test
-    public void bfs() {
-        BTreeSearch.bfs(node);
     }
 }

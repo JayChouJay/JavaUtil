@@ -5,7 +5,7 @@ import java.util.concurrent.Callable;
 
 public class Test {
     @org.junit.jupiter.api.Test
-    public void errorProne(){
+    public void errorProne() {
         byte b1 = (byte) 1000;
         System.out.println("b1:" + b1);
         float f1 = 21474836471f;
@@ -19,8 +19,9 @@ public class Test {
                 System.out.println("不是周杰伦");
         }
     }
+
     @org.junit.jupiter.api.Test
-    public void commons(){
+    public void commons() {
         List<Integer> numbers = new ArrayList<>();
 
         Iterator<Integer> iterator = numbers.iterator();
@@ -31,5 +32,11 @@ public class Test {
         }
     }
 
+    @org.junit.jupiter.api.Test
+    public void testClassLoader() throws ClassNotFoundException {
+        MyClassLoader myClassLoader = new MyClassLoader();
+        Class myClass = myClassLoader.loadClass("java.lang.String");
+        System.out.println(myClass.getName());
+    }
 
 }
