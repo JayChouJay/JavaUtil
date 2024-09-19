@@ -1,21 +1,17 @@
-public class Test {
-    public static void main(String[] args) {
+import java.io.Serializable;
+import java.util.Arrays;
 
-        // System.out.println(1.0/9*9);
-        // int i = -11;
-        // int j = -12;
-        // int z = -13;
-        // i >>= 1;
-        // j >>= 1;
-        // z >>= 1;
-        // i<<=1;
-        // j<<=1;
-        // z<<=1;
-        // System.out.println(i);
-        // System.out.println(j);
-        // System.out.println(z);
-        int i=-26;
-        i>>=2;
-        System.out.println(i);
+public class Test{
+    public int a = 1;
+
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Test te = new Test();
+        Test test = (Test)te.clone();
+        System.out.println(test.a);
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
     }
 }

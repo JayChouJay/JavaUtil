@@ -53,19 +53,19 @@ public class FactoryTest {
      */
     @Test
     public void factoryMethod() {
-        ToyFactoryInterface robotFactory=new RobotFactory();
+        ToyFactoryInterface robotFactory = new RobotFactory();
         Toy robot = robotFactory.createToy();
         robot.play();
 
-        ToyFactoryInterface dinosaurFactory=new DinosaurFactory();
+        ToyFactoryInterface dinosaurFactory = new DinosaurFactory();
         Toy dinosaur = dinosaurFactory.createToy();
         dinosaur.play();
 
-        ToyFactoryInterface spaceshipFactory=new SpaceshipFactory();
+        ToyFactoryInterface spaceshipFactory = new SpaceshipFactory();
         Toy spaceship = spaceshipFactory.createToy();
         spaceship.play();
 
-        ToyFactoryInterface cockFactory=new CockFactory();
+        ToyFactoryInterface cockFactory = new CockFactory();
         Toy cock = cockFactory.createToy();
         cock.play();
     }

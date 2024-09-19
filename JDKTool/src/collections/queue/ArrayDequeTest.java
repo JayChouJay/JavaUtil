@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class ArrayDequeTest {
     ArrayDeque arrayDeque=new ArrayDeque();
